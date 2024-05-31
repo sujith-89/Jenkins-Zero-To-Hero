@@ -1,5 +1,5 @@
 package com.abhishek;
-
+import java.sql.DriverManager;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.stereotype.Controller;
@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 @SpringBootApplication
 @Controller
 public class StartApplication {
-
+// Get mapping code
     @GetMapping("/")
     public String index(final Model model) {
         model.addAttribute("title", "I have successfuly built a sprint boot application using Maven");
